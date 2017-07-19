@@ -23,6 +23,19 @@ Add a shortcut key for each desired script. See the scripts in the inputs folder
 
 * Linux mint - 18.2
 
+## Creating your own toggleXinput
+
+Create your script file in the `/opt/8R-ToggleXinput/inputs` folder with the script bellow:
+
+```
+#!/bin/bash
+
+cd "/opt/8R-ToggleXinput/inputs"
+
+sh ToggleXinput.sh "XINPUT_NAME" "/path/to/icon/image";
+```
+*Note*: Replace the text `XINPUT_NAME` by the desired input name as well as the text `/path/to/icon/image` by the path of desired icon. This icon will be displayed on notification.
+
 ## Licensing
 
 **8R-ToggleXinput** is provided and distributed under the [Apache Software License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
